@@ -1,0 +1,8 @@
+services:
+  reviews:
+    build: .
+    image: ghcr.io/powernoobpy/bookinfo-reviews:prd
+    ports:
+      - "8082:9080"
+    environment:
+      SERVICE_VERSION: v1
